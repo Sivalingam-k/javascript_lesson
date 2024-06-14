@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <div id="d5"></div>
+    <div id="d6"></div>
+    <div id="d7"></div>
+    <div id="d8"></div>
+    <div id="d9"></div>
+    <div id="d10"></div>
+    <div id="d11"></div>
+    <div id="d12"></div>
+    <div id="d13"></div>
+    <div id="d14"></div>
+    <div id="d15"></div>
+    <div id="d16"></div>
+    <div id="d17"></div>
+    <div id="d18"></div>
+    <div id="d19"></div>
+    <div id="d20"></div>
+    <script>
+        let msg = "I welcome you all in changepond,you all are changepond developer.";
+        document.getElementById("d1").innerHTML = msg;
+        //String into upper case
+        document.getElementById("d2").innerHTML = msg.toUpperCase();
+        //String to Lower Case
+        document.getElementById("d3").innerHTML = msg.toLowerCase();
+        //count character in string
+        document.getElementById("d4").innerHTML = msg.length;
+        //find index of changepond using indexOf()
+        document.getElementById("d5").innerHTML = msg.indexOf("changepond");
+        //find index of changepond using lastIndexOf()
+        document.getElementById("d6").innerHTML = msg.lastIndexOf("changepond");
+
+        //use of Search method
+        document.getElementById("d7").innerHTML = msg.search("you");
+
+
+
+        //search part of string
+        //1.slice
+        document.getElementById("d8").innerHTML = msg.slice(0, 7);//from 5 to 7
+        document.getElementById("d9").innerHTML = msg.slice(-20, -5);//from-20 to -5
+
+        //2.sub-string
+        document.getElementById("d10").innerHTML = msg.substring(5);
+        document.getElementById("d11").innerHTML = msg.substring(5, 30);
+        //3.substr
+        document.getElementById("d12").innerHTML = msg.substring(5);
+
+        // 4.split
+        console.log(msg);
+        console.log(msg.split(" "));
+
+        //   5.use of replace
+        document.getElementById("d13").innerHTML = msg.replace("welcome","haha");
+        document.getElementById("d14").innerHTML = msg.replaceAll("welcome","haha");
+        document.getElementById("d15").innerHTML = msg.replace(/welcome/ig,"haha");
+        //6.charAt:
+        document.getElementById("d16").innerHTML = msg.charAt(0);
+
+        
+
+    </script>
+</body>
+
+</html>

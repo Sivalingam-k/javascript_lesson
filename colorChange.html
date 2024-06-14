@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #background{
+            height:100px;
+            width:400px;
+
+        }
+       
+    </style>
+</head>
+<body>
+<div id="background"></div>
+    <button id="btn1" onclick="red()" >Red</button>
+    <button id="btn2" onclick="green()" >Green</button>
+    <button id="btn3" onclick="blue()">Blue</button>
+    <script>
+function red(){
+    document.getElementById("background").style.background="Red";
+}
+function green(){
+    document.getElementById("background").style.background="green";
+}
+function blue(){
+    document.getElementById("background").style.background="blue";
+}
+    </script>
+</body>
+</html>

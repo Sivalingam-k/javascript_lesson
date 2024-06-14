@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //object data type
+        let person = {
+            id: 100,
+            name: "siva",
+            contact: 97787978,
+            single: true,
+            address: {
+                city: "chennai",
+                pin: 698777,
+                state: "Tamil Nadu"
+            },
+            details: function () {
+                return `Id:${this.id} Name:${this.name} Contact:${this.contact} Single:${this.single} Address:${this.address.city} `;
+            }
+
+        }
+        document.write(`Id:${person.id} Name:${person.name} Contact:${person.contact},<br>`);
+        document.write(`city:${person.address.city},<br>`);
+        document.write(`details:${person.details()}`);
+
+        //How to change object data
+person.name="M.suresh";
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="d1"></h1>
+    <h1 id="d2"></h1>
+    <h3 id="d3">Good Morning</h3>
+    <script>
+        //document.write
+        document.write("welcome You All <br>");
+        document.write(500);
+
+        //window.alert
+        window.alert("hello");//high priority
+
+        //console.log
+        console.log("Hello Shiva");//prints output in console
+
+        //DOM(Document Object Model)
+        //Here we set vale or data
+        document.getElementById("d1").innerHTML="Hello Shiva";
+        document.getElementById("d2").innerHTML="Hello Basil";
+
+        //coloring
+        document.getElementById("d1").style.color="red";
+
+        //Here we get data using dom
+       let data=document.getElementById("d3").innerHTML;
+       console.log(data);
+
+    </script>
+</body>
+</html>

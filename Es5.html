@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let msg = "       hello       ";
+        // 1. forEach():
+        let courses = ["react", "angular", "Javascript"];
+
+        courses.forEach((val, index) => {
+            document.write(val + " ")
+        });
+        document.write("<br>")
+
+        //2.map();
+        let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        document.write(num, "<br>");
+        let mapOut = num.map((value, index) => {
+            return val * 2
+        });
+        document.write(mapOut, "<br>");
+
+        //3.Filter();
+        let filterOut = num.filter((val, index) => {
+            return val % 2 == 0;
+        });
+        document.write(filterOut, "<br>");
+
+        //4.every():
+        let everyOut = num.every((val, index) => {
+            return val > 0;
+        });
+        document.write(evryout, "<br>");
+
+        //5.some();
+        let someOut = num.some((val, index) => {
+            return val > 2;
+        });
+        document.write(someOut, "<br>");
+
+        //6.reduce/reduceRight
+        let reduceOut = num.reduce((prev, next) => {
+            return prev + next;
+        });
+        document.write(reduceOut, "<br>");
+
+
+    </script>
+</body>
+
+</html>
